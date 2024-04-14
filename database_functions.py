@@ -4,7 +4,7 @@ from pymongo import MongoClient
 def save_to_mongodb(data):
     """This function saves a dictionary to MongoDB database"""
     client = MongoClient(
-        'mongodb+srv://molakrzysztof:papiez69xD*@cars.uwewuw1.mongodb.net/?retryWrites=true&w=majority&appName=Cars')
+        'mongodb+srv://molakrzysztof:<password>@cars.uwewuw1.mongodb.net/?retryWrites=true&w=majority&appName=Cars')
 
     db = client["car_info"]
     collection = db["cars_info"]
